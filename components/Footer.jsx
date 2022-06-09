@@ -1,9 +1,7 @@
 const Footer = () => (
-  <>
-    <p>Copyright © 2022 ERPatos Company - Todos os direitos reservados</p>
-    <p>Política de Privacidade</p>
-    <p>Direitos do titular</p>
-  </>
+  <footer>
+    <p>Copyright © 2022 Curare - Todos os direitos reservados</p>
+  </footer>
 );
 
 export { Footer };

@@ -1,0 +1,32 @@
+@use '../styles/_variables.scss';
+
+.navBar__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #000000;
+  color: #fefefe;
+  margin-top: 20px;
+}
+
+.navBar__link {
+  &:hover {
+    // color: variables.$color-accent;
+    text-decoration: underline;
+  }
+}
+
+.navBarButton {
+  background-color: hsla(0, 0%, 0%, 0.65);
+  color: variables.$color-txt;
+  border: 2px solid variables.$color-accent;
+  border-radius: 50px;
+  padding: 0 1.5rem;
+  transition: 1s;
+  margin: 1rem;
+
+  &:hover {
+    background-color: rgba(235, 20, 85, 0.833);
+    border: 2px solid rgb(255, 255, 255);
+  }
+}

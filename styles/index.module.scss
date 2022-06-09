@@ -1,0 +1,74 @@
+@use './styles/_variables.scss';
+
+.gridWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  height: 812px;
+  font-size: 1.5rem;
+}
+
+.leftContent {
+  background-image: url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1213&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.rightContent {
+  background-image: url('https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.contentWrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+//TODO: Create an animation to show text on hover.
+
+.content__image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 0 500px hsla(0, 0%, 0%, 0.65) inset;
+  color: variables.$color-txt;
+  // transition: 1s;
+
+  // &:hover {
+  //   box-shadow: 0 0 0 400px hsla(0, 0%, 50%, 0.6) inset;
+  // }
+}
+
+.content__text p {
+  max-width: 75ch;
+}
+
+.detailButton {
+  background-color: hsla(0, 0%, 0%, 0.65);
+  color: variables.$color-txt;
+  border: 2px solid variables.$color-accent;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  transition: 1s;
+
+  &:hover {
+    background-color: rgba(235, 20, 85, 0.833);
+    border: 2px solid rgb(255, 255, 255);
+  }
+}
+
+.content__image .content__text {
+  // opacity: 0;
+  // transform: scale(0);
+  // transition: 0.8s;
+
+  // &:hover {
+  //   opacity: 1;
+  //   // transform: scale(1);
+  // }
+}
