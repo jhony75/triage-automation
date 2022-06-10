@@ -11,13 +11,13 @@ const Header = () => (
         </Link>
       </button>
       <button type="button" className={styles.navBarButton}>
-        <Link href="cardioPatch" className={styles.navBar__link}>
-          <a className={styles.navBar__link}>Cardio Patch</a>
+        <Link href="triageAutomation" className={styles.navBar__link}>
+          <a className={styles.navBar__link}>Robô de Triagem</a>
         </Link>
       </button>
       <button type="button" className={styles.navBarButton}>
-        <Link href="triageAutomation" className={styles.navBar__link}>
-          <a className={styles.navBar__link}>Robô de Triagem</a>
+        <Link href="cardioPatch" className={styles.navBar__link}>
+          <a className={styles.navBar__link}>Cardio Patch</a>
         </Link>
       </button>
       <button type="button" className={styles.navBarButton}>
